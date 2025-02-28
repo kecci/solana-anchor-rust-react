@@ -12,3 +12,15 @@ Reference docs:
 2. [2) Setup Anchor Project](https://grape-bit-bc8.notion.site/2-Setup-Anchor-Project-193683b00ae5803b8642e252c67e4204?pvs=4)
 3. [3) Anchor Boilerplate Program Walkthrough](https://grape-bit-bc8.notion.site/3-Anchor-Boilerplate-Program-Walkthrough-195683b00ae580e49742f2c66a65ff3f?pvs=4)
 4. [4) Frontend Anchor Program Walkthrough](https://grape-bit-bc8.notion.site/4-Frontend-Anchor-Program-Walkthrough-1a2683b00ae580108e24ed5ae1f039d7?pvs=4)
+
+## Set npm start CLI
+```
+"scripts": {
+    "start": "vite",
+```
+
+## Deploy to Heroku
+1. heroku login
+2. heroku create (after that, copy the name of project, paste on the next step).
+3. heroku git:remote -a arcane-dusk-58612
+4. git subtree push --prefix front-end heroku master
